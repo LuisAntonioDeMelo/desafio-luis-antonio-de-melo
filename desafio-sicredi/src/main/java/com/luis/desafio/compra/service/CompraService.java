@@ -123,7 +123,12 @@ public class CompraService {
             }
         }
     }
-
+    
+    private void validaLimiteMaximo(Produto produto) throws CompraException {
+        if (produto.getQuantidadeDisponivel() > LIMITE_QUANTIDADE) {
+            throw new CompraException(MessageFormat.format(MSG_VALIDACAO_CPF, produto.getNomeProduto()));
+        }
+    }
 
     private void validaLimiteExcedido(Produto produto, Produto produtoCompra) throws CompraException {
         int quantidadeTotal = produto.getQuantidadeDisponivel() + produtoCompra.getQuantidadeDisponivel();
@@ -133,11 +138,6 @@ public class CompraService {
         }
     }
 
-    private void validaLimiteMaximo(Produto produto) throws CompraException {
-        if (produto.getQuantidadeDisponivel() > LIMITE_QUANTIDADE) {
-            throw new CompraException(MessageFormat.format(MSG_VALIDACAO_CPF, produto.getNomeProduto()));
-        }
-    }
 
 
     public List<Compra> getAll() {
