@@ -27,13 +27,13 @@ tb_produto
 ===
 
 **Para rodar a aplicação basta apenas utilizar o docker compose**
+>  cmd : docker-compose build // para buildar localmente
+>  cmd: 'docker-compose up ' // subir a aplicação
+na pasta ./Desafio-Sicredi da aplicação
 
-> cmd: docker-compose-up na pasta ./Desafio-Sicredi da aplicação
-rodar op banco basta utilizar o docker compose
 
-**Json Cadastro**
-
-**Json Pesquisa**
-
-**Json Relatorio**
+*jsons*
 ==
+importar  as collections de teste no arquivo
+
+file> Collections-Insomnia_2024-10-17
