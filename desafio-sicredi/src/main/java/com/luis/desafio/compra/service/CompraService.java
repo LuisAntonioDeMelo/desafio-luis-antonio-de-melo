@@ -150,8 +150,10 @@ public class CompraService {
             LocalDate dataInicio,
             LocalDate dataFim
     ) {
+        String cpfFormatado =  cpf.replaceAll("\\D", "");
+
         LocalDateTime inicio = dataInicio != null ? dataInicio.atStartOfDay() : null;
         LocalDateTime fim = dataFim != null ? dataFim.atTime(LocalTime.MAX) : null;
-        return compraRepository.pesquisarComprasFiltros(cpf, nomeProduto, inicio, fim);
+        return compraRepository.pesquisarComprasFiltros(cpfFormatado, nomeProduto, inicio, fim);
     }
 }
