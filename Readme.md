@@ -11,17 +11,16 @@ Para o desafio foi utilizando as versões : Java 21 e springboot 3.3 e Postgres 
 **_tabelas_**
 
 tb_compra
-   cpf
-   list<produtos>
-   dataCadasto
-   valorTotalCompra
+   - cpf
+   - list<produtos>
+   - dataCadasto
+   - valorTotalCompra
    
-
 tb_produto
-   id
-   nome
-   quantidade
-   valorUnitario
+   - id
+   - nome
+   - quantidade
+   - valorUnitario
 
 \*\*
 ===
