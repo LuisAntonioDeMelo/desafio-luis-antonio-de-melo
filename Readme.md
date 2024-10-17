@@ -26,9 +26,15 @@ tb_produto
 ===
 
 **Para rodar a aplicação basta apenas utilizar o docker compose**
->  cmd : docker-compose build // para buildar localmente
->  cmd: 'docker-compose up ' // subir a aplicação
+>  cmd : docker-compose build 
+
+// para buildar localmente
+
+>  cmd: 'docker-compose up ' 
+> 
+// subir a aplicação
 na pasta ./Desafio-Sicredi da aplicação
+
 
 
 *jsons*
