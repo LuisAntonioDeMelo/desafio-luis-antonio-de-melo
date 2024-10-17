@@ -35,7 +35,9 @@ tb_produto
 // subir a aplicação
 na pasta ./Desafio-Sicredi da aplicação
 
-
+*swagger* 
+==
+http://localhost:8081/swagger-ui/index.html
 
 *jsons*
 ==
